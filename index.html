@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shearwall Systems Inc. </title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="images/SSI_Logo.png" type="image/png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {},
+        },
+    };
+</script>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    .company-info:hover .dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* Ensure the dropdown appears below the company-info section */
+.dropdown-menu {
+    top: 100%; /* Moves dropdown below the company-info div */
+}
+
+    </style>
+</head>
+<body class="bg-white">
+<div class="flex flex-col lg:flex-row lg:h-screen sm:h-auto">
+    <!-- Left Section / COMPANY LOGO & NAME -->
+<div class="bg-gradient-to-b from-white to-green-100 w-full lg:w-1/4 p-6 flex flex-col items-center justify-center pb-12 lg:pb-48">
+<!-- Company Info Wrapper (Logo, Name, Tagline) -->
+<div class="company-info mb-8 border-green-600 border hover:border-green-700 p-4 relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg text-center">
+    <a href="#" class="block">
+        <img src="images/SSI_Logo.png" alt="Shearwall Logo" class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 mx-auto mb-4">
+    </a>
+    <a href="#" class="text-green-800  md:text-4xl sm:text-xl font-bold block leading-tight">
+        SHEARWALL <br> SYSTEMS INC.
+    </a>
+    <a href="#" class="text-zinc-700 font-medium text-xs sm:text-sm block">
+        CAST-IN-PLACE CONSTRUCTION COMPANY
+    </a>
+
+            <!-- Dropdown Menu -->
+            <div class="dropdown-menu absolute left-0 bg-green-700 text-white w-full p-2 shadow-lg opacity-0 pointer-events-none 
+                             transition-all duration-300 ease-out transform translate-y-4 z-50">
+                <a href="whoWeAre.html" class="block p-2 hover:bg-green-600">Who We Are</a>
+                <a href="whatWeBelieveIn.html" class="block p-2 hover:bg-green-600">What We Believe In</a>
+                <a href="whatWeArePassionateAbout.html" class="block p-2 hover:bg-green-600">What We Are Passionate About</a>
+                <!--<a href="coreValues.html" class="block p-2 hover:bg-green-600">Core Values</a> -->
+            </div>
+
+</div>
+<a href="messageUs.html">
+<button class="font-medium border-green-700 border-2 rounded-sm hover:bg-green-700 hover:text-white text-zinc-700 py-2 px-6 shadow-md text-sm sm:text-base">
+    MESSAGE US
+</button></a>
+</div>
+
+
+    <!-- Right Section / PICTURE GRIDS (LINKS) -->
+    <div class="bg-gradient-to-b from-white to-green-100 grid grid-cols-12 gap-2 px-2 w-full lg:flex-1 min-h-screen flex flex-col pb-4">
+
+        <!-- First Column -->
+        <div class="col-span-12 sm:col-span-4 flex flex-col space-y-2 h-screen ">
+            <a href="lowRise.html" class="block flex-1 sm:h-1/2 relative">
+                <img src="images/low1.jpg" alt="Low Rise Residential" class="w-full h-full object-cover">
+                <div class="absolute top-0 left-0 py-1 px-3 flex">
+                    <p class="text-white font-bold text-2xl sm:text-m pr-2">Lowrise </p> <p class="text-zinc-900 font-bold text-2xl">Residential</p>
+                </div>
+            </a>
+            <a href="midrise.html" class="block flex-1 sm:h-1/2 relative">
+                <img src="images/mid1.jpg" alt="Mid Rise Residential" class="w-full h-full object-cover">
+                <div class="absolute top-0 left-0 py-1 px-3 flex">
+                    <p class="text-white font-bold text-2xl pr-2">Midrise </p> <p class="text-zinc-900 font-bold text-2xl">Residential</p>
+                </div>
+            </a>
+            <a href="commercial.html" class="block flex-1 sm:h-1/2 relative">
+                <img src="images/commer1.jpg" alt="Commercial" class="w-full h-full ">
+                <div class="absolute top-0 left-0 py-1 px-3 flex">
+                    <p class="text-white font-bold text-2xl pr-2">Commercial </p> <p class="text-zinc-900 font-bold text-2xl">Building</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Second Column -->
+        <div class="col-span-12 sm:col-span-4 flex flex-col space-y-2 h-screen">
+            <a  class="row-span-1 relative ">
+                <img src="images/4.jpg" alt="Small Row Middle 2" class="w-full h-full object-cover opacity-50">
+            </a>
+            <a href="educationalInstitution.html" class="block flex-1 sm:h-1/2 relative">
+                <img src="images/12.jpg" alt="Educational Institution" class="w-full h-full ">
+                <div class="absolute top-0 left-0 py-1 px-3">
+                        <p class="text-zinc-900 font-bold text-2xl">Educational Institution</p>
+                </div>
+            </a>
+            <a href="medicalInstitution.html" class="block flex-1 sm:h-1/2 relative">
+                <img src="images/Medical.jpg" alt="Medical Institution" class="w-full h-full object-cover">
+                <div class="absolute top-0 left-0 py-1 px-3">
+                        <p class="text-white font-bold text-2xl">Medical Institution</p>
+                </div>
+            </a>
+            <a  class="row-span-1 relative ">
+                <img src="images/forInserter1.jpg" alt="Small Row Middle 2" class="w-full h-full object-cover opacity-50">
+            </a>
+        </div>
+
+        <!-- Third Column -->
+        <div class="col-span-12 sm:col-span-4 flex flex-col h-screen space-y-2 sm:h-auto lg:overflow-hidden">
+
+            <a href="companyEvents.html" class="block flex-1 sm:h-1/2 relative">
+                <img src="images/company.jpg" alt="Company Events" class="w-full h-full object-cover">
+                <div class="absolute top-0 left-0 py-1 px-3">
+                        <p class="text-white font-bold text-2xl">Company Events</p>
+                </div>
+            </a>
+            <a  class="row-span-1 flex-1 relative">
+                <img src="images/forInserter6.jpg" alt="Small Row Middle 2" class="w-full h-full object-cover opacity-50">
+                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                    <p class="text-black font-bold text-lg"></p>
+                </div>
+            </a>
+            <a href="csr.html" class="block flex-1 sm:h-1/2 relative">
+                <img src="images/CSR.jpg" alt="CSR" class="w-full h-full object-cover">
+                <div class="absolute top-0 left-0 py-1 px-3">
+                        <p class="text-white font-bold text-2xl"> CSR </p>
+                </div>
+            </a>
+            <a  class="row-span-1 flex-1 relative">
+                <img src="images/forInserter8.jpg" alt="Small Row Middle 2" class="w-full h-full object-cover opacity-50">
+                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                    <p class="text-white font-bold text-lg"></p>
+                </div>
+            </a>
+            <a href="careers.html" class="block flex-1 sm:h-1/2 relative ">
+                <img src="images/forCareers.jpg" alt="Careers" class="w-full h-full">
+                <div class="absolute top-0 left-0 py-1 px-3">
+                        <p class="text-white font-bold text-2xl">Careers</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+</body>
+</html>
